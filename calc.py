@@ -23,9 +23,8 @@ date_format = "%m/%d/%Y"
 a = datetime.strptime('8/18/2008', date_format)
 b = datetime.strptime('9/27/2008', date_format)
 delta = b - a
-print delta.days # that's it
+print delta.days
 
-date_format = "%Y-%m-%d %H:%M"
 a = datetime.strptime('2016-08-19 13:49', date_format)
 b = datetime.strptime('2016-08-21 10:49', date_format)
 delta = b - a
