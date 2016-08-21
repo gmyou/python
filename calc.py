@@ -27,6 +27,13 @@ print delta.days # that's it
 
 date_format = "%Y-%m-%d %H:%M"
 a = datetime.strptime('2016-08-19 13:49', date_format)
-b = datetime.strptime('2016-08-21 13:49', date_format)
+b = datetime.strptime('2016-08-21 10:49', date_format)
 delta = b - a
-print delta.days # that's it
+print delta
+
+#timedelta
+print "############ timedelta #############"
+from datetime import timedelta
+now = datetime.now()
+dday = now + timedelta(days=1) + timedelta(hours=20)
+print now.ctime(), ' 1day 20hours increament day is ', dday.ctime()
