@@ -5,7 +5,7 @@ def dday(argv):
     now = datetime.now()
 
     try:
-        opts, args = getopt.getopt(argv, "d:h:", "day=")
+        opts, args = getopt.getopt(argv, "d:h:", ["days=", "hours="])
     except getopt.GetoptError:
         print "dday.py -d <days> -h <hours>"
 
